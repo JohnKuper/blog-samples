@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SpannableLeak</string>
+    <string name="terms_and_conditions_fragment">Terms &amp; Conditions Fragment</string>
+    <string name="terms_and_conditions_link">I agree to the &lt;u&gt;terms &amp; conditions&lt;/u&gt;</string>
+</resources>
