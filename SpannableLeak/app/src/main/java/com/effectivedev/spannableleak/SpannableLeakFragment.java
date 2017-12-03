@@ -20,7 +20,6 @@ public class SpannableLeakFragment extends Fragment {
     private static final String TAG = SpannableLeakFragment.class.getSimpleName();
 
     private OnSpanClickListener mOnSpanClickListener;
-    private TextView mTvSpanLink;
 
     public static SpannableLeakFragment newInstance() {
         return new SpannableLeakFragment();
@@ -36,9 +35,9 @@ public class SpannableLeakFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(com.effectivedev.spannableleak.R.layout.fragment_spannable_leak, container, false);
-        mTvSpanLink = (TextView) rootView.findViewById(R.id.tvSpannableText);
+        TextView tvSpanLink = (TextView) rootView.findViewById(R.id.tvSpannableText);
         //this should be used during onStart()
-        setTermsAndConditionsClickableText(mTvSpanLink);
+        setTermsAndConditionsClickableText(tvSpanLink);
         return rootView;
     }
 

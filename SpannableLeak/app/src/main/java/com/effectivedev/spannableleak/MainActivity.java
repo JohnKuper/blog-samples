@@ -21,6 +21,6 @@ public class MainActivity extends AppCompatActivity implements SpannableLeakFrag
 
     @Override
     public void onSpanClick() {
-        mManager.beginTransaction().replace(R.id.container, WebInfoFragment.newInstance()).addToBackStack("").commit();
+        mManager.beginTransaction().replace(R.id.container, WebInfoFragment.newInstance()).addToBackStack(null).commit();
     }
 }
